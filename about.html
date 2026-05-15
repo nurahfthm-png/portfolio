@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f8fafc;
+    color:#111;
+}
+
+    nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+   background: 
+    #cbeef3;
+   box-shadow:0px 5px 20px rgba(0,0,0,0.35);
+
+    position:relative;
+    z-index:100;
+}
+nav h1{
+    color:rgb(0, 0, 0);
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:rgb(2, 2, 2);
+    text-decoration:none;
+}
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.img{
+    display:flex;
+    justify-content:center; 
+    align-items:center;
+    margin-top:50px;
+}
+
+.img img{
+    width:500px;
+    height:500px;
+
+    border-radius:50%; 
+
+    object-fit:cover;
+
+    border:6px solid  #cbeef3 ; 
+}
+
+.about-text{
+    text-align:center;
+    max-width:700px;
+
+    margin:40px auto;
+
+    line-height:1.8;
+
+    padding:20px;
+}
+
+.about-text h1{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    margin-bottom:25px;
+}
+
+.about-text h2{
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
+.about-text ul{
+    list-style:none;
+    padding:0;
+}
+
+.about-text li{
+    margin:12px 0;
+}
+
+/* Footer */
+footer{
+    background: #cbeef3;
+
+    color:rgb(0, 0, 0);
+    text-align:center;
+    padding:20px;
+     box-shadow:0px 5px 20px rgba(0,0,0,0.35);
+
+    position:relative;
+    z-index:100; }
+
+</style>
+<body>
+     <header>
+        <nav>
+            <h1>Fine ART
+            </h1>
+
+            <ul>
+                <li ><a href="./index.html">Home</a></li>
+                <li><a style="font-weight:bold;" href="about.html">About</a></li>
+                <li><a href="./sevices.html">Services</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="img"><img src="./images/55491aad1e6e63b74c93bd6346dec7d3.jpg" alt=""></div>
+
+    <div class="about-text">
+
+    <h1>About Me</h1>
+
+    <p>
+        I'm Noora, an independent artist and a graphic designer.
+        I enjoy transforming ideas into meaningful visual experiences through
+        illustration, creativity, and design. My work combines artistic expression
+        with thoughtful design to create visuals that are both beautiful and meaningful.
+    </p>
+
+    <h2>Services</h2>
+
+    <p>Here's what you can expect from this page:</p>
+
+    <ul>
+        <li>Digital Illustration</li>
+        <li>Graphic Design</li>
+        <li>Brand Identity Design</li>
+        <li>Poster & Social Media Design</li>
+        <li>Creative Visual Solutions</li>
+    </ul>
+
+</div>
+
+   <!-- Footer -->
+    <footer>
+        <p>© 2026 Fine Arts By Noora</p>
+    </footer>  
+
+</body>
+</html>
