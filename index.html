@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    font-family: Arial, sans-serif;
+    background:#f8fafc;
+    color:#111;
+}
+
+/* Navigation */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    background:#0f172a;
+}
+
+nav h1{
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+/* Hero Section */
+.hero{
+    height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:#86b2ec;
+}
+
+.hero h2{
+    font-size:60px;
+}
+
+.hero button{
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    background:#f59e0b;
+    cursor:pointer;
+}
+
+/* Footer */
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+</style>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <h1>Laila</h1>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <h2>Hello, I'm Laila</h2>
+
+            <p>Graphic Designer & Web Developer</p>
+
+            <button>View Projects</button>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 My Portfolio</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
