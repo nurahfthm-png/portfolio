@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    
 </head>
+
+
 <style>
+    
     *{
     margin:0;
     padding:0;
@@ -25,11 +28,18 @@ nav{
     justify-content:space-between;
     align-items:center;
     padding:20px;
-    background:#0f172a;
+   background: 
+    #cbeef3;
+   box-shadow:0px 5px 20px rgba(0,0,0,0.35);
+
+    position:relative;
+    z-index:100;
 }
 
+
+
 nav h1{
-    color:white;
+    color:rgb(0, 0, 0);
 }
 
 nav ul{
@@ -39,52 +49,79 @@ nav ul{
 }
 
 nav a{
-    color:white;
+    color:rgb(2, 2, 2);
     text-decoration:none;
 }
 
 /* Hero Section */
 .hero{
-    height:80vh;
+    height:100vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-    background:#86b2ec;
+   background-image: url(./images/WhatsApp\ Image\ 2026-01-14\ at\ 9.40.54\ AM.jpeg);
+     background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
 }
+
+.home{ font-weight: bold;}
 
 .hero h2{
     font-size:60px;
+    color: #f8fafc;
+}
+
+.hero p{color: #ffffff;}
+
+.hero button{
+    transition:0.3s;
+}
+
+.hero button:hover{
+    transform:scale(1.1);
 }
 
 .hero button{
     margin-top:20px;
     padding:10px 20px;
     border:none;
-    background:#f59e0b;
+    background:#cbeef3;
     cursor:pointer;
 }
 
+
 /* Footer */
 footer{
-    background:#0f172a;
-    color:white;
+    background: #cbeef3;
+
+    color:rgb(0, 0, 0);
     text-align:center;
     padding:20px;
+     box-shadow:0px 5px 20px rgba(0,0,0,0.35);
+
+    position:relative;
+    z-index:100; }
+
 </style>
 
 <body>
+ 
 
     <!-- Header -->
     <header>
         <nav>
-            <h1>Laila</h1>
+            <h1>Fine ART
+            </h1>
 
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li ><a style="font-weight:bold;"
+                    "index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./sevices.html">Services</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -96,11 +133,15 @@ footer{
         <!-- Hero Section -->
         <section class="hero">
 
-            <h2>Hello, I'm Laila</h2>
+           <h2 id="typing"></h2>
 
-            <p>Graphic Designer & Web Developer</p>
+            <p>Visual Artist & Graphic Designer</p>
 
-            <button>View Projects</button>
+<a href="./work.html">
+    <button id="workBtn">View My Work</button>
+</a>
+           
+            
 
         </section>
 
@@ -108,7 +149,7 @@ footer{
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 My Portfolio</p>
+        <p>© 2026 Fine Arts By Noora</p>
     </footer>
 
 <script src="script.js"></script>
